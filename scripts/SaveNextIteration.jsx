@@ -38,13 +38,16 @@ psdSaveOptions.spotColors = false;
 
 var DebugLogger = function (debugHeader) {
     this.debugLog = debugHeader + "\n";
+    this.logCount = 0;
 
     this.AddLog = function (log) {
         this.debugLog += log + "\n";
+        this.logCount += 1;
     }
 
     this.PrintLog = function () {
-        alert(this.debugLog)
+        if (this.logCount > 0)
+            alert(this.debugLog)
     }
 }
 
