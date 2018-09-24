@@ -1,10 +1,24 @@
+/* ========================================================== 
+// Jeffrey Hong
+// ======================================================= */
+// This script is supplied as is. It is provided as freeware.   
+// The author accepts no liability for any problems arising from its use.  
+// enable double-clicking from Mac Finder or Windows Explorer  
 /*
+<javascriptresource>
+<name>Save Next Iteration</name>
+<about>
 This script will save another copy of the active doc in a folder that is in the same directory as the active photoshop doc.
 It will also save the current active photoshop doc.
-
-TODO:
-
+</about>
+<category>CustomTools</category>
+<enableinfo>true</enableinfo>
+</javascriptresource>
 */
+
+#target photoshop // this command only works in Photoshop CS2 and higher  
+// bring application forward for double-click events  
+app.bringToFront();
 
 //  Dynamic variables
 var padding = 2;                                  //  Number of digits in the iteration.

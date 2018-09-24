@@ -4,6 +4,21 @@
 // This script is supplied as is. It is provided as freeware.   
 // The author accepts no liability for any problems arising from its use.  
 // enable double-clicking from Mac Finder or Windows Explorer  
+/*
+<javascriptresource>
+<name>Update SmartLinked Objects Path </name>
+<about>
+This will update broken smartLinked objects path with the correct server file path.
+</about>
+<category>CustomTools</category>
+<enableinfo>true</enableinfo>
+</javascriptresource>
+*/
+
+#target photoshop // this command only works in Photoshop CS2 and higher  
+// bring application forward for double-click events  
+app.bringToFront();
+
 
 var begDesc = "$$$/JavaScripts/UpdateSmartLinkedObjectsPath/Description=Updates the server path names." // endDesc
 var begName = "$$$/JavaScripts/UpdateSmartLinkedObjectsPath/MenuName=Update Smart Linked Objects Path" // endName
@@ -14,9 +29,7 @@ var PCSouth;
 var serverPath = "~/Desktop/MP1";
 
 
-
-
-if( !documents.length){
+if (!documents.length) {
     alert("There are no documents open.", "No Document");
 } else {
     //  Global variables
@@ -26,9 +39,12 @@ if( !documents.length){
 }
 
 
+
+
 function Main()
 {
     //  Cache users edit environments so we can restore it later.
+
     var orig_ruler_units = app.preferences.rulerUnits;
     var orig_type_units = app.preferences.typeUnits;
     var orig_display_dialogs = app.displayDialogs;
@@ -47,6 +63,9 @@ function Main()
     app.displayDialogs = orig_display_dialogs;                  // Reset display dialogs   
     app.preferences.rulerUnits = orig_ruler_units;              // Reset units to original settings  
     app.preferences.typeUnits = orig_type_units;                // Reset ruler units to original settings   
+
+    // $infile = "missing link.tif";
+    // app.open(new File($infile));
 }
 
 
