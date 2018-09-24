@@ -1,0 +1,21 @@
+Install PhotoshopCC2015 Extensions 
+
+Download the zip file and unzip it.
+
+OSX
+
+Copy the folder to 
+/Library/Application Support/Adobe/CEP/extensions/
+
+Copy the unzipped folder into the extensions folder.
+
+Windows
+
+Copy the unzipped folder to the appropriate directory.
+Windows 64: C:\Program Files (x86)\Common Files\Adobe\CEP\extensions\
+Windows 32: C:\Program Files\Common Files\Adobe\CEP\extensions\
+If the Adobe\CEP\extensions folder does not exist, you can create it.
+
+Restart Photoshop. You’ll find the extension at Window > Extensions >
+
+Ensure that you do not modify the extension folder. Doing so will cause a “The extension could not be loaded because it was not properly signed” error when you try to launch it.
