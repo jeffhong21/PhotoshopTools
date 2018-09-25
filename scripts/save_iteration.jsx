@@ -4,6 +4,7 @@
 // This script is supplied as is. It is provided as freeware.   
 // The author accepts no liability for any problems arising from its use.  
 // enable double-clicking from Mac Finder or Windows Explorer  
+//  ctrl + command + s
 /*
 <javascriptresource>
 <name>Save Next Iteration</name>
@@ -72,6 +73,9 @@ function Main()
     // Check there is an open document, otherwise quit
     if (app.documents.length == 0) { alert("No active document."); return 1; }
 
+    docName = docName.replace(/ /g, '_');
+    basename = docName.match(/(.*)\.[^\.]+$/)[1];;
+    
     //  Initialize debugger
     debugLog = new DebugLogger("Debug Logger:")
     //  -- Add to DebugLogger
