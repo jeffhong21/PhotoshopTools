@@ -24,7 +24,7 @@ app.bringToFront();
 //  Dynamic variables
 var padding = 2;                                  //  Number of digits in the iteration.
 var splitText = "-";
-var debug = true;
+var debug = false;
 
 
 //  Document caches
@@ -108,6 +108,8 @@ function Main()
 
     //  Print Debug Log
     if (debug) debugLog.PrintLog();
+
+    alert("File Saved\nNew iteration named: \n" + basename + splitText + iteration + ".psd\n" + "has been saved.");
 }
 
 
