@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionManifest Version="5.0" ExtensionBundleId="WorkspaceTools" ExtensionBundleVersion="1.2.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Author>
+		<![CDATA[pspowertools.com]]>
+	</Author>	<ExtensionList>
+		<Extension Id="WorkspaceTools" Version="1.2" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="PHXS" Version="15.0" />
+			<Host Name="PHSP" Version="15.0" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+		    <RequiredRuntime Name="CSXS" Version="5.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="WorkspaceTools">
+			<DispatchInfo >
+				<Resources>
+				<MainPath>./index.html</MainPath>
+				<ScriptPath>./Scripts.jsx</ScriptPath>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>WorkspaceTools</Menu>
+					<Geometry>
+						<Size>
+							<Height>188</Height>
+							<Width>180</Width>
+						</Size>
+						<MinSize>
+							<Height>0</Height>
+							<Width>0</Width>
+						</MinSize>
+					</Geometry>
+					<Icons>
+						<Icon Type="Normal">./icons/Icon_Script.png</Icon>
+					</Icons>
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>

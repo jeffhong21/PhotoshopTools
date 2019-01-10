@@ -1,0 +1,4 @@
+#target photoshop//// _6Up.jsxcTID = function(s) { return app.charIDToTypeID(s); };sTID = function(s) { return app.stringIDToTypeID(s); };////==================== 6 Up ==============//function _6Up() {  // Select  function step1(enabled, withDialog) {    if (enabled != undefined && !enabled)      return;    var dialogMode = (withDialog ? DialogModes.ALL : DialogModes.NO);    var desc1 = new ActionDescriptor();    var ref1 = new ActionReference();    ref1.putEnumerated(cTID('Mn  '), cTID('MnIt'), sTID("6upTile"));    desc1.putReference(cTID('null'), ref1);    executeAction(cTID('slct'), desc1, dialogMode);  };  try{step1(); }
+  catch(e){alert("You need 6 or more windows open");
+  }
+       };//=========================================//                    _6Up.main//=========================================//_6Up.main = function () {  _6Up();};_6Up.main();// EOF"_6Up.jsx"// EOF
