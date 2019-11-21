@@ -1,2 +1,2 @@
 # PhotoshopTools
-A collection of tools I use in Photoshop
+A collection of tools.
